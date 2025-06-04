@@ -25,4 +25,6 @@ python fetch_gsc_indexed_urls.py https://example.com
 
 Replace `https://example.com` with your site's property URL in Google Search Console (must include the scheme).
 
-The script will output the pages returned by the API. Note that the API does not provide a guaranteed exhaustive list of all indexed pages; it returns only pages that recorded impressions in the selected date range.
+The script will output the pages returned by the API. Use `--limit 100` to show only the first 100 results or `--output urls.txt` to export all fetched URLs to `urls.txt`. Progress is automatically saved so the script can resume when API quotas are hit.
+
+Note that the API does not provide a guaranteed exhaustive list of all indexed pages; it returns only pages that recorded impressions in the selected date range. If a quota error stops the download early, rerun the command later and it will continue from where it left off.
