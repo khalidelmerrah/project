@@ -22,7 +22,7 @@ pip install google-api-python-client google-auth-oauthlib
 4. Run the script and follow the authentication prompts. A `token.json` file will be saved for future runs.
 
 ```bash
-python fetch_gsc_indexed_urls.py https://example.com
+python fetch.py https://example.com
 ```
 
 Replace `https://example.com` with your site's property URL in Google Search Console (must include the scheme).
